@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    308266,       5263]
-NotebookOptionsPosition[    307276,       5232]
-NotebookOutlinePosition[    307622,       5247]
-CellTagsIndexPosition[    307579,       5244]
+NotebookDataLength[    308839,       5278]
+NotebookOptionsPosition[    307848,       5247]
+NotebookOutlinePosition[    308194,       5262]
+CellTagsIndexPosition[    308151,       5259]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -631,12 +631,13 @@ Cell[BoxData[{
        RowBox[{"y", ",", "z"}], "}"}]}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"data4gapCase", ";"}], "\[IndentingNewLine]", 
+  RowBox[{"data4gapCase", ";"}], "\n", 
   RowBox[{"(*", 
    RowBox[{"===", 
     RowBox[{"=", " ", 
      RowBox[{
-      RowBox[{"Plots", " ", "==="}], "="}]}]}], "*)"}]}], "\n", 
+      RowBox[{"Plots", " ", "==="}], "="}]}]}], 
+   "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"ListPlot", "[", 
    RowBox[{"data1", ",", 
@@ -697,30 +698,42 @@ Cell[BoxData[{
  RowBox[{"data2prgap", ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"data4gap", ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{"Plot", "[", 
-  RowBox[{
-   RowBox[{"OppWeight", "[", 
-    RowBox[{
-    "OppMagFaceDist", ",", "n", ",", "MagThickness", ",", " ", "\"\<A\>\""}], 
-    "]"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"n", ",", "1", ",", "NCoils"}], "}"}], ",", 
+ RowBox[{
+  RowBox[{"Plot", "[", 
    RowBox[{
-   "PlotLabel", "\[Rule]", 
-    "\"\<A: Increasing Segment Towards AP Boundary\>\""}]}], 
-  "]"}], "\[IndentingNewLine]", 
- RowBox[{"Plot", "[", 
-  RowBox[{
-   RowBox[{"OppWeight", "[", 
+    RowBox[{"OppWeight", "[", 
+     RowBox[{
+     "OppMagFaceDist", ",", "n", ",", "MagThickness", ",", " ", "\"\<A\>\""}],
+      "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1", ",", "NCoils"}], "}"}], ",", 
     RowBox[{
-    "OppMagFaceDist", ",", "n", ",", "MagThickness", ",", " ", "\"\<R\>\""}], 
-    "]"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"n", ",", "1", ",", "NCoils"}], "}"}], ",", " ", 
+    "PlotLabel", "\[Rule]", 
+     "\"\<A: Increasing Segment Towards AP Boundary\>\""}], ",", " ", 
+    RowBox[{"AxesLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Slice\>\"", ",", " ", "\"\<Weight\>\""}], "}"}]}]}], "]"}],
+   " ", 
+  RowBox[{"(*", 
+   RowBox[{"Attracting", " ", "Weight"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Plot", "[", 
    RowBox[{
-   "PlotLabel", "\[Rule]", 
-    "\"\<R: Increasing Segment Away From AP Boundary\>\""}]}], 
-  "]"}], "\[IndentingNewLine]", 
+    RowBox[{"OppWeight", "[", 
+     RowBox[{
+     "OppMagFaceDist", ",", "n", ",", "MagThickness", ",", " ", "\"\<R\>\""}],
+      "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "1", ",", "NCoils"}], "}"}], ",", " ", 
+    RowBox[{
+    "PlotLabel", "\[Rule]", 
+     "\"\<R: Increasing Segment Away From AP Boundary\>\""}], ",", 
+    RowBox[{"AxesLabel", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<Slice\>\"", ",", " ", "\"\<Weight\>\""}], "}"}]}]}], "]"}],
+   " ", 
+  RowBox[{"(*", 
+   RowBox[{"Repelling", " ", "Weight"}], "*)"}]}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"ListPlot3D", "[", 
    RowBox[{
@@ -984,7 +997,9 @@ Sum)\>\""}], ",", " ",
    3.7739593255071907`*^9}, {3.7739595235657463`*^9, 
    3.7739595344250946`*^9}, {3.7739595761358304`*^9, 
    3.7739595796983237`*^9}, {3.773959668392149*^9, 3.773959824467124*^9}, 
-   3.7739601040171013`*^9, {3.77396027058913*^9, 3.773960282635975*^9}}],
+   3.7739601040171013`*^9, {3.77396027058913*^9, 3.773960282635975*^9}, {
+   3.7740310299351325`*^9, 3.7740310771525493`*^9}, {3.7740311178250303`*^9, 
+   3.7740311574455323`*^9}}],
 
 Cell[BoxData["0.0625`"], "Output",
  CellChangeTimes->{
@@ -5247,23 +5262,23 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 40205, 964, 2832, "Input"],
-Cell[40787, 988, 4765, 65, 30, "Output"],
-Cell[45555, 1055, 4782, 66, 48, "Output"],
-Cell[50340, 1123, 4782, 66, 48, "Output"],
-Cell[55125, 1191, 4781, 66, 49, "Output"],
-Cell[59909, 1259, 4781, 66, 48, "Output"],
-Cell[64693, 1327, 4782, 66, 49, "Output"],
-Cell[69478, 1395, 6890, 107, 240, "Output"],
-Cell[76371, 1504, 6875, 106, 262, "Output"],
-Cell[83249, 1612, 6891, 106, 248, "Output"],
-Cell[90143, 1720, 178647, 2913, 298, 152000, 2487, "CachedBoxData", \
+Cell[579, 22, 40777, 979, 2872, "Input"],
+Cell[41359, 1003, 4765, 65, 30, "Output"],
+Cell[46127, 1070, 4782, 66, 48, "Output"],
+Cell[50912, 1138, 4782, 66, 48, "Output"],
+Cell[55697, 1206, 4781, 66, 49, "Output"],
+Cell[60481, 1274, 4781, 66, 48, "Output"],
+Cell[65265, 1342, 4782, 66, 49, "Output"],
+Cell[70050, 1410, 6890, 107, 240, "Output"],
+Cell[76943, 1519, 6875, 106, 262, "Output"],
+Cell[83821, 1627, 6891, 106, 248, "Output"],
+Cell[90715, 1735, 178647, 2913, 298, 152000, 2487, "CachedBoxData", \
 "BoxData", "Output"],
-Cell[268793, 4635, 8770, 141, 256, "Output"],
-Cell[277566, 4778, 15237, 245, 239, "Output"],
-Cell[292806, 5025, 4824, 67, 30, "Output"],
-Cell[297633, 5094, 4828, 67, 30, "Output"],
-Cell[302464, 5163, 4796, 66, 30, "Output"]
+Cell[269365, 4650, 8770, 141, 256, "Output"],
+Cell[278138, 4793, 15237, 245, 239, "Output"],
+Cell[293378, 5040, 4824, 67, 30, "Output"],
+Cell[298205, 5109, 4828, 67, 30, "Output"],
+Cell[303036, 5178, 4796, 66, 30, "Output"]
 }, Open  ]]
 }
 ]
